@@ -39,6 +39,7 @@ jobs:
 
     - name: Install more dependencies - poetry
       run: |
+        # NOTE: poetry only installs on Python 3.8
         pip install poetry
 
     - name: Lint with flake8
@@ -64,5 +65,5 @@ jobs:
     - name: Build documentation
       run: |
         # use sphinx to build the documentation
-        # sphinx-build -b html .\docs\source\ .\docs\build\
-        sphinx-build .\docs\source\ .\docs\build\
+        # sphinx-build -b html ./docs/source/ ./docs/build/
+        sphinx-build ./docs/source ./docs/build
