@@ -31,9 +31,12 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
         # pip install poetry
 
-    - name: Install more dependencies
+    - name: Install more dependencies - sphinx
       run: |
         pip install sphinx
+
+    - name: Install more dependencies - poetry
+      run: |
         pip install poetry
 
     - name: Lint with flake8
