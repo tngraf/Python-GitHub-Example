@@ -34,7 +34,7 @@ jobs:
     - name: Install more dependencies
       run: |
         pip install sphinx
-        # pip install poetry
+        pip install poetry
 
     - name: Lint with flake8
       run: |
@@ -53,8 +53,11 @@ jobs:
 
     - name: Test with pytest
       run: |
+        # run tests with pytest
         pytest
 
     - name: Build documentation
       run: |
-        sphinx-build -b html .\docs\source\ .\docs\build\
+        # use sphinx to build the documentation
+        # sphinx-build -b html .\docs\source\ .\docs\build\
+        sphinx-build .\docs\source\ .\docs\build\
