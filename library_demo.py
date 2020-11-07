@@ -35,7 +35,7 @@ class MyLibraryDemo:
 
         parser.add_argument(
             "arguments",
-            nargs = "+",
+            nargs = "+",   # noqa: E251
             help="operation to perform",
         )
 
