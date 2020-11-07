@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "mylibrary"
+version = "0.0.1"
+description = "This is a demo/test Python project"
+authors = ["Thomas Graf <tngraf@gmx.de>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+colorama = "^0.3.7"
+
+[tool.poetry.dev-dependencies]
+sphinx = "^2.4.1"
+flake8 = ">=3.7.8"
+coverage = "^5.3"
+
+[tool.poetry.scripts]
+test = 'scripts:test'
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+

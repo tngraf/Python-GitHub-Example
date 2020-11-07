@@ -1,2 +1,5 @@
 # Python-GitHub-Example
-Demo Python project
+
+This is a demo/test Python project.
+
+Aim is to test the GitHub action feature.
