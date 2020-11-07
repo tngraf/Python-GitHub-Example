@@ -27,8 +27,13 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install flake8 pytest black sphinx
+        pip install flake8 pytest black
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        # pip install poetry
+
+    - name: Install more dependencies
+      run: |
+        pip install sphinx
         # pip install poetry
 
     - name: Lint with flake8
