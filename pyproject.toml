@@ -3,6 +3,19 @@ name = "mylibrary"
 version = "0.0.1"
 description = "This is a demo/test Python project"
 authors = ["Thomas Graf <tngraf@gmx.de>"]
+license = "MIT License"
+readme = "README.md"
+include = ["LICENSE"]
+repository = "https://github.com/tngraf/Python-GitHub-Example"
+homepage = "https://github.com/tngraf/Python-GitHub-Example"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3 :: Only",
+]
 
 [tool.poetry.dependencies]
 python = "^3.6"
