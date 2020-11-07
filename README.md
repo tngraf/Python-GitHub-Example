@@ -16,7 +16,7 @@ See GitHub pages: https://tngraf.github.io/Python-GitHub-Example/
 
 ## Build
 
-You can build the package using `poetry <https://poetry.eustace.io/>`_:
+You can build the package using ```poetry``` (https://poetry.eustace.io/):
 ```code
     poetry build
 ```
@@ -45,6 +45,8 @@ or
     coverage report -m
     coverage html
 ```
+
+We use Codecov (https://codecov.io) to visualize the code coverage results.
 
 ## License ##
 
