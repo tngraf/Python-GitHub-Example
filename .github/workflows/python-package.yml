@@ -55,7 +55,8 @@ jobs:
     - name: Check format with black
       run: |
         # poetry run black . --check --diff
-        black . --check --diff
+        # run black but exclude sphinx files
+        black . --check --diff --exclude docs/source/conf.py
 
     - name: Test with pytest
       run: |
