@@ -29,13 +29,11 @@ class MyLibraryDemo:
     @classmethod
     def parse_commandline(cls):
         """Parse command line arguments"""
-        parser = argparse.ArgumentParser(
-            description="Test MyLibrary"
-        )
+        parser = argparse.ArgumentParser(description="Test MyLibrary")
 
         parser.add_argument(
             "arguments",
-            nargs = "+",   # noqa: E251
+            nargs="+",
             help="operation to perform",
         )
 
@@ -57,16 +55,18 @@ class MyLibraryDemo:
         args = self.parse_commandline()
         if len(args.arguments) < 3:
             sys.exit(
-                Fore.LIGHTRED_EX +
-                "Error: Not enough arguments specified!" +
-                Style.RESET_ALL)
+                Fore.LIGHTRED_EX
+                + "Error: Not enough arguments specified!"
+                + Style.RESET_ALL
+            )
 
         if not self.check_operation(args.arguments[0]):
             sys.exit(
-                Fore.LIGHTRED_EX +
-                "Error: No valid operation specified: " +
-                args.arguments[0] +
-                Style.RESET_ALL)
+                Fore.LIGHTRED_EX
+                + "Error: No valid operation specified: "
+                + args.arguments[0]
+                + Style.RESET_ALL
+            )
 
         lib = mylibrary.MyLibrary()
 
@@ -87,10 +87,7 @@ class MyLibraryDemo:
 
             print("Result = " + str(result))
         except Exception as ex:
-            sys.exit(
-                Fore.LIGHTRED_EX +
-                "Error: " + repr(ex) +
-                Style.RESET_ALL)
+            sys.exit(Fore.LIGHTRED_EX + "Error: " + repr(ex) + Style.RESET_ALL)
 
 
 if __name__ == "__main__":

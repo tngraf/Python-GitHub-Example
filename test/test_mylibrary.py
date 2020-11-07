@@ -11,7 +11,7 @@ import unittest
 
 sys.path.insert(1, "..")
 
-import mylibrary
+import mylibrary  # noqa: E402
 
 
 class MyLibraryTest(unittest.TestCase):
