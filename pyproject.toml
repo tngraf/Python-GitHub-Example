@@ -13,7 +13,7 @@ sphinx = "^2.4.1"
 flake8 = ">=3.7.8"
 coverage = "^5.3"
 black = "^19.10b0"
-codecov = "^2.0.22"
+# codecov = "^2.0.22"
 pyflakes = "^2.2.0"
 
 [tool.poetry.scripts]
