@@ -14,9 +14,9 @@ jobs:
     strategy:
       matrix:
         container:
-        #- 'python:3.6-slim'
-        #- 'python:3.7-slim'
-        #- 'python:3.8-slim'
+        - 'python:3.6-slim'
+        - 'python:3.7-slim'
+        - 'python:3.8-slim'
         - 'python:3.9-slim'
 
     container: ${{ matrix.container }}

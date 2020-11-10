@@ -12,7 +12,7 @@ Aim is to test the GitHub action feature.
 
 ## Documentation
 
-See GitHub pages: https://tngraf.github.io/Python-GitHub-Example/ 
+See GitHub pages: https://tngraf.github.io/Python-GitHub-Example/
 
 ## Build
 
@@ -31,6 +31,17 @@ Cleanup builds:
     rm -r dist/ build/ docs/
 ```
 
+## Style & Formatting
+
+Style is checked with ```flake8```:
+```code
+    poetry run flake8 . --count --exit-zero --statistics
+```
+
+Formatting is checked with ```black```:
+```code
+    poetry run black . --check --diff
+```
 
 ## Test
 
@@ -46,7 +57,7 @@ or
     coverage html
 ```
 
-We use Codecov (https://codecov.io) to visualize the code coverage results.
+We use ```Codecov``` (https://codecov.io) to visualize the code coverage results.
 
 ## License ##
 
