@@ -31,6 +31,8 @@ class MyLibraryDemo:
         """Parse command line arguments"""
         parser = argparse.ArgumentParser(description="Test MyLibrary")
 
+        # force black to ignore the following section
+        # fmt: off
         parser.add_argument(
             "arguments",
             nargs="+",
@@ -43,6 +45,7 @@ class MyLibraryDemo:
             help="be verbose",
             action="store_true",
         )
+        # fmt: on
 
         args = parser.parse_args()
 
