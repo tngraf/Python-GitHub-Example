@@ -36,3 +36,5 @@ test = 'scripts:test'
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
 
+[tool.black]
+exclude = "docs/"
