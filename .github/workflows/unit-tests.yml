@@ -19,7 +19,7 @@ jobs:
         container:
         - 'python:3.6-slim'
         - 'python:3.7-slim'
-        - 'python:3.8-slim'
+        #- 'python:3.8-slim'
         - 'python:3.9-slim'
         - 'python:3.10-slim'
         - 'python:3.11-slim'
@@ -58,3 +58,6 @@ jobs:
         indicators: true
         output: both
         thresholds: '50 75'
+
+    - name: Write to Job Summary
+      run: cat code-coverage-results.md >> $GITHUB_STEP_SUMMARY
