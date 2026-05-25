@@ -64,11 +64,6 @@ profile = "black"
 line_length = 100
 skip_glob = "docs/*"
 
-[tool.pytest.ini_options]
-minversion = "7.0"
-testpaths = ["test"]
-addopts = "--cov=mylibrary --cov-report=html --cov-report=term-missing"
-
 [tool.flake8]
 exclude = "docs/,.git,__pycache__"
 max-line-length = 100
