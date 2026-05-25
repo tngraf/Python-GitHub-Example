@@ -16,7 +16,7 @@ See GitHub pages: <https://tngraf.github.io/Python-GitHub-Example/>
 
 ## AI Support
 
-The main information about the project is in [AGENTS.md](AGENTS.md).  
+The main information about the project is in [AGENTS.md](AGENTS.md).
 [CLAUDE.md](CLAUDE.md) and [copilot-instructions.md](./.github/copilot-instructions.md) only
 refer to [AGENTS.md](AGENTS.md).
 
@@ -83,6 +83,14 @@ poetry run coverage html
 ```
 
 We use [Codecov](https://codecov.io) to visualize the code coverage results.
+
+## Pre-Commit
+
+Run locally
+
+```shell
+poetry run pre-commit run --all-files
+```
 
 ## License
 

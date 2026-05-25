@@ -1,0 +1,49 @@
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.3.0
+    hooks:
+    -   id: check-yaml
+    -   id: check-case-conflict
+    -   id: detect-private-key
+    -   id: check-toml
+    -   id: check-yaml
+    -   id: trailing-whitespace
+        args: [--markdown-linebreak-ext=md]
+
+-   repo: https://github.com/pycqa/isort
+    rev: 6.1.0
+    hooks:
+      -   id: isort
+          name: isort (python)
+
+-   repo: https://github.com/pycqa/flake8
+    rev: 7.3.0
+    hooks:
+    -   id: flake8
+
+-   repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v2.1.0
+    hooks:
+    -   id: mypy
+
+# This is just HOW we could run pytest.
+# In my opinion pre-commit should be fast, and developers should have
+# run the relevant tests prior to committing.
+#
+# That is why we don't actively use it here
+#-   repo: local
+#    hooks:
+#    -   id: pytest
+#        name: pytest
+#        entry: poetry run pytest
+#        language: system
+#        types: [python]
+#        pass_filenames: false
+#        always_run: true
+
+-   repo: https://github.com/psf/black
+    rev: 26.5.1
+    hooks:
+    -   id: black
+        exclude: ^docs/source/conf.py
+        language_version: python3.14
