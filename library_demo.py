@@ -52,7 +52,7 @@ class MyLibraryDemo:
 
         return args
 
-    def main(self):
+    def main(self) -> None:
         """Main method()"""
         print("\nTest MyLibrary")
 
@@ -75,7 +75,7 @@ class MyLibraryDemo:
         lib = mylibrary.MyLibrary()
 
         try:
-            result = None
+            result: int | float = 0
             operation = args.arguments[0].lower()
             a = int(args.arguments[1])
             b = int(args.arguments[2])

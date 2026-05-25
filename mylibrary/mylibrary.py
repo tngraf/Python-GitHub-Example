@@ -23,7 +23,7 @@ class LibraryError(Exception):
 class MyLibrary:
     """Python test interface"""
 
-    def check_operands(self, a: int, b: int):
+    def check_operands(self, a: int, b: int) -> bool:
         """
         Check the operands for being integer values.
 
@@ -42,7 +42,7 @@ class MyLibrary:
 
         return True
 
-    def operation_add(self, a: int, b: int):
+    def operation_add(self, a: int, b: int) -> int:
         """
         Add two integer values.
 
@@ -58,7 +58,7 @@ class MyLibrary:
 
         return a + b
 
-    def operation_subtract(self, a: int, b: int):
+    def operation_subtract(self, a: int, b: int) -> int:
         """
         Subtract two integer values.
 
@@ -74,7 +74,7 @@ class MyLibrary:
 
         return a - b
 
-    def operation_multiply(self, a: int, b: int):
+    def operation_multiply(self, a: int, b: int) -> int:
         """
         Multiply two integer values.
 
@@ -90,7 +90,7 @@ class MyLibrary:
 
         return a * b
 
-    def operation_divide(self, a: int, b: int):
+    def operation_divide(self, a: int, b: int) -> float:
         """
         Divide two integer values.
 
