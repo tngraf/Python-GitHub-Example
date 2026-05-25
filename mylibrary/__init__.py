@@ -7,4 +7,4 @@
 
 __version__ = (0, 5, 0)
 
-from .mylibrary import MyLibrary, LibraryError  # noqa: F401
+from .mylibrary import LibraryError, MyLibrary  # noqa: F401

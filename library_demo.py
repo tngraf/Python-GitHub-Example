@@ -1,5 +1,5 @@
 # -------------------------------------------------------------------------------
-# (c) 2020 Thomas Graf
+# (c) 2020-2026 Thomas Graf
 # All Rights Reserved.
 #
 # Licensed under the MIT license.
@@ -11,11 +11,12 @@ Simple demo application that uses MyLibrary
 
 import argparse
 import sys
-from colorama import init, Fore, Style
+
+from colorama import Fore, Style, init
 
 import mylibrary
 
-# intialize colorama
+# initialize colorama
 init()
 
 

@@ -12,53 +12,78 @@ Aim is to test the GitHub action feature.
 
 ## Documentation
 
-See GitHub pages: https://tngraf.github.io/Python-GitHub-Example/
+See GitHub pages: <https://tngraf.github.io/Python-GitHub-Example/>
+
+## AI Support
+
+The main information about the project is in [AGENTS.md](AGENTS.md).  
+[CLAUDE.md](CLAUDE.md) and [copilot-instructions.md](./.github/copilot-instructions.md) only
+refer to [AGENTS.md](AGENTS.md).
 
 ## Build
 
-You can build the package using ```poetry``` (https://poetry.eustace.io/):
+You can build the package using [poetry](https://poetry.eustace.io/):
+
 ```code
-    poetry build
+poetry build
 ```
 
 Build documentation (the generated static site must be pushed to the **gh-pages** branch):
+
 ```code
-    sphinx-build ./docs/source ./docs/build
+sphinx-build ./docs/source ./docs/build
 ```
 
 Cleanup builds:
+
 ```code
-    rm -r dist/ build/ docs/
+rm -r dist/ build/ docs/
 ```
 
 ## Style & Formatting
 
-Style is checked with ```flake8```:
+Style is checked with [flake8](https://flake8.pycqa.org/en/latest/):
+
 ```code
-    poetry run flake8 . --count --exit-zero --statistics
+poetry run flake8 . --count --exit-zero --statistics
 ```
 
-Formatting is checked with ```black```:
+Import order is checked with [isort](https://isort.readthedocs.io/en/latest/):
+
 ```code
-    poetry run black . --check --diff
+poetry run isort .
+```
+
+Formatting is checked with [black](https://github.com/psf/black):
+
+```code
+poetry run black . --check --diff
+```
+
+Type information is checked with [mypy](https://mypy-lang.org/):
+
+```code
+poetry run mypy .
 ```
 
 ## Test
 
 Start the complete test suite or a specific test case (and generate coverage report):
+
 ```code
-    pytest
+poetry run pytest
 ```
 
 or
+
 ```code
-    coverage run -m pytest
-    coverage report -m
-    coverage html
+poetry run coverage run -m pytest
+poetry run coverage report -m
+poetry run coverage html
 ```
 
-We use ```Codecov``` (https://codecov.io) to visualize the code coverage results.
+We use [Codecov](https://codecov.io) to visualize the code coverage results.
 
-## License ##
+## License
 
 The project is licensed under the MIT License.
