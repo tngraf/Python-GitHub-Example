@@ -8,7 +8,7 @@ description = "This is a demo/test Python project"
 readme = "README.md"
 license = "MIT"
 license-files = [
-    "License"
+    "LICENSE.txt"
 ]
 authors = [
     {name = "Thomas Graf", email = "tngraf@gmx.de"}
